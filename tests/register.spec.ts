@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('success create new account', async ({ page }) => {
+test('success create new account @register', async ({ page }) => {
   //Note: For Registration Automation. Ask about duplicate data?
   //Best practices with DB access and no access?
   //pre

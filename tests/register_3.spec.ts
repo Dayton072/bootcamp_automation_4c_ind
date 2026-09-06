@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Register invalid on line3', async ({ page }) => {
   //pre
   await page.goto('https://www.emra.chat/signup');
   ///pre2
@@ -19,6 +19,8 @@ test('test', async ({ page }) => {
   //steps
   await page.getByRole('button', { name: 'Create Account' }).click();
   await page.getByRole('textbox', { name: 'Company Name' }).click();
+  await page.getByRole('button', { name: 'Create Account' }).click();
+  await expect.soft(page.locator('#companyName')).toContainText('Please fill out this field.');
   await page.getByRole('textbox', { name: 'Company Name' }).fill('c');
   await page.getByRole('button', { name: 'Create Account' }).click();
   await page.getByLabel('Industry').selectOption('saas');

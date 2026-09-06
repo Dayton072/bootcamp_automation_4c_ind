@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('register invalid on line 2', async ({ page }) => {
   //pre
   await page.goto('https://www.emra.chat/signup');
   //steps page 1
