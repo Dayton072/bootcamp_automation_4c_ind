@@ -24,3 +24,4 @@ jobs:
           docker push $DOCKERHUB_USERNAME/bootcamp_automation_4c_ind:base
         env:
           DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
+          
