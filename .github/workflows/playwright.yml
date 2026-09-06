@@ -20,7 +20,7 @@ jobs:
         DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
         DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         YOUR_REPO_NAME: "bootcamp_automation_4c_ind"
-      run: echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+       run: echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
 
      - name: Install dependencies
        run: npm ci
