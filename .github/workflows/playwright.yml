@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: daytonk/bootcamp_automation_4c_ind:base
+      credentials:
+        username: ${{ vars.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
     steps:
      - name: Checkout Repository
        uses: actions/checkout@v4
