@@ -1,4 +1,4 @@
-import {type Locator, type Page} from '@playwright/test'
+import {expect, type Locator, type Page} from '@playwright/test'
 
 export class HomePage{
     // == PAGE INSTANCE
@@ -18,5 +18,9 @@ export class HomePage{
     // == ACTION METHODS
     async goTo(){
         await this.page.goto('https://www.emra.chat/home');
+    }
+
+    async verifyHomePage(){
+        await expect(this.page).toHaveURL('https://www.emra.chat/home');
     }
 }

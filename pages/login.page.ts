@@ -11,6 +11,8 @@ export class LoginPage{
 
     readonly invalidCredentialFlashMessage: Locator;
 
+    readonly signupButton: Locator;
+
     // == CONSTRUCTOR ==
     constructor (page: Page){
         this.page = page;
@@ -21,6 +23,8 @@ export class LoginPage{
         this.loginButton = page.getByRole('button', { name: 'Sign In' });
 
         this.invalidCredentialFlashMessage = page.getByText('Invalid credentials')
+
+        this.signupButton = page.getByRole('link', { name: 'Sign up' })
 
     }
 
@@ -33,5 +37,9 @@ export class LoginPage{
         await this.emailField.fill(email);
         await this.passwordField.fill(password);
         await this.loginButton.click();
+    }
+
+    async clickSignup(){
+        await this.signupButton.click();
     }
 }

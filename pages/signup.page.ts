@@ -1,6 +1,6 @@
 import {type Locator, type Page} from '@playwright/test'
 
-export class SingupPage{
+export class SignupPage{
     // == PAGE INSTANCE
     readonly page: Page;
 
