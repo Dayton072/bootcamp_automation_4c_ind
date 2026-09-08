@@ -55,12 +55,11 @@ test('Test Register Button', async ({ page }) => {
   //pre
   const loginPage = new LoginPage(page)
   const signupPage = new SignupPage(page)
-  await page.goto('https://www.emra.chat/login');
 
   //steps
   await loginPage.goTo()
   await loginPage.clickSignup()
 
   //exp
-  await signupPage.goTo()
+  await signupPage.verifySignupPage();
 });
