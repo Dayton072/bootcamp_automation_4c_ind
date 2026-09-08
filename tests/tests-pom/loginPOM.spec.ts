@@ -62,5 +62,5 @@ test('Test Register Button', async ({ page }) => {
   await loginPage.clickSignup()
 
   //exp
-  await signupPage.goTo()
+  await signupPage.verifySignupPage();
 });
