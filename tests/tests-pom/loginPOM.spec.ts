@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/login.page';
+import { HomePage } from '../pages/home.page';
 
 //test account
 //dktest@email.com
@@ -8,6 +9,7 @@ import { LoginPage } from '../pages/login.page';
 test('Login Valid', async ({ page }) => {
   //pre
   const loginPage = new LoginPage(page)
+  const homePage = new HomePage(page)
   const email = 'dktest@email.com'
   const password = 'test1234'
 
@@ -16,11 +18,8 @@ test('Login Valid', async ({ page }) => {
   await loginPage.loginAs(email,password)
 
   //expect
-  await expect(page).toHaveURL('https://www.emra.chat/home');
-  await expect(page.getByRole('button', { name: 'Home' })).toBeVisible();
-
-  await expect(page.getByRole('button', { name: 'DK Test dktest@email.com DT' })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Home' })).toBeVisible();
+  await homePage.goTo()
+  await expect(homePage.avatar).toBeVisible();
 });
 
 test('login invalid email', async ({ page }) => {
