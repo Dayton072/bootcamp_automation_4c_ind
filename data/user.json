@@ -3,7 +3,11 @@
     "email": "dktest@email.com",
     "password": "test1234"
   },
-  "invalid_user": {
+  "invalid_email_user": {
+    "email": "testinv@email.com",
+    "password": "test1234"
+  },
+  "invalid_password_user": {
     "email": "dktest@email.com",
     "password": "test!23"
   }

@@ -3,16 +3,15 @@ import { LoginPage } from '../../pages/login.page';
 import { HomePage } from '../../pages/home.page';
 import { SignupPage } from '../../pages/signup.page';
 
-//test account
-//dktest@email.com
-//test1234
+import userData from '../../data/user.json';
 
-test('Login Valid', async ({ page }) => {
+
+test('Login Valid @p0 @positive @smoketest', async ({ page }) => {
   //pre
   const loginPage = new LoginPage(page)
   const homePage = new HomePage(page)
-  const email = 'dktest@email.com'
-  const password = 'test1234'
+  const email = userData['regular_user']['email']
+  const password = userData['regular_user']['password']
 
   //step
   await loginPage.goTo()
@@ -23,11 +22,11 @@ test('Login Valid', async ({ page }) => {
   await expect(homePage.avatar).toBeVisible();
 });
 
-test('login invalid email', async ({ page }) => {
+test('login invalid email @p1 @negative', async ({ page }) => {
   //pre
   const loginPage = new LoginPage(page)
-  const email = 'fail@email.com'
-  const password = 'test1234'
+  const email = userData['invalid_email_user']['email']
+  const password = userData['invalid_email_user']['password']
 
   //steps
   await loginPage.goTo()
@@ -37,11 +36,11 @@ test('login invalid email', async ({ page }) => {
   expect(loginPage.invalidCredentialFlashMessage).toBeVisible;
 });
 
-test('login invalid password', async ({ page }) => {
+test('login invalid password @p1 @negative', async ({ page }) => {
   //pre
   const loginPage = new LoginPage(page)
-  const email = 'dktest@email.com'
-  const password = 'test12345'
+  const email = userData['invalid_password_user']['email']
+  const password = userData['invalid_password_user']['password']
 
   //steps
   await loginPage.goTo()
@@ -51,7 +50,7 @@ test('login invalid password', async ({ page }) => {
   expect(loginPage.invalidCredentialFlashMessage).toBeVisible;
 });
 
-test('Test Register Button', async ({ page }) => {
+test('Test Register Button @p2 @positive', async ({ page }) => {
   //pre
   const loginPage = new LoginPage(page)
   const signupPage = new SignupPage(page)
