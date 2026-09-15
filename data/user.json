@@ -1,0 +1,10 @@
+{
+  "regular_user": {
+    "email": "dktest@email.com",
+    "password": "test1234"
+  },
+  "invalid_user": {
+    "email": "dktest@email.com",
+    "password": "test!23"
+  }
+}
