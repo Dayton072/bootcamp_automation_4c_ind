@@ -11,7 +11,7 @@ test('Login Valid @p0 @positive @smoketest', async ({ page }) => {
   const loginPage = new LoginPage(page)
   const homePage = new HomePage(page)
   const email = userData['regular_user']['email']
-  const password = userData['regular_user']['password']
+  const password = userData['invalid_password_user']['password']
 
   //step
   await loginPage.goTo()
