@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number"
+            },
+            "email": {
+              "type": "string",
+              "minLength": 1
+            },
+            "email_confirmed": {
+              "type": "boolean"
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "roles": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            },
+            "can_access": {
+              "type": "array",
+              "items": {
+                "required": [],
+                "properties": {}
+              }
+            },
+            "emra_pro_role": {
+              "type": "array",
+              "items": {
+                "required": [],
+                "properties": {}
+              }
+            },
+            "active": {
+              "type": "boolean"
+            },
+            "phone_number": {
+              "type": "string",
+              "minLength": 1
+            },
+            "country_code": {
+              "type": "string",
+              "minLength": 1
+            },
+            "country": {
+              "type": "string",
+              "minLength": 1
+            },
+            "whatsapp": {
+              "type": "boolean"
+            },
+            "google_id": {},
+            "google_avatar_url": {},
+            "created_at": {
+              "type": "string",
+              "minLength": 1
+            },
+            "updated_at": {
+              "type": "string",
+              "minLength": 1
+            },
+            "last_login_at": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "email",
+            "email_confirmed",
+            "name",
+            "roles",
+            "source",
+            "can_access",
+            "emra_pro_role",
+            "active",
+            "phone_number",
+            "country_code",
+            "country",
+            "whatsapp",
+            "created_at",
+            "updated_at",
+            "last_login_at"
+          ]
+        },
+        "feature_flags": {
+          "type": "object",
+          "properties": {
+            "coming_soon": {
+              "type": "boolean"
+            },
+            "bypass_captcha": {
+              "type": "boolean"
+            },
+            "checkout_payment_gateway": {
+              "type": "boolean"
+            },
+            "payment_gateway_qris": {
+              "type": "boolean"
+            },
+            "career_sales_mgmt": {
+              "type": "boolean"
+            },
+            "career_sales": {
+              "type": "boolean"
+            },
+            "career_marketing": {
+              "type": "boolean"
+            },
+            "disable_rate_limiter": {
+              "type": "boolean"
+            },
+            "payment_gateway_cimb": {
+              "type": "boolean"
+            },
+            "payment_gateway_bri": {
+              "type": "boolean"
+            },
+            "payment_gateway_mandiri": {
+              "type": "boolean"
+            },
+            "payment_gateway_bni": {
+              "type": "boolean"
+            },
+            "program_data": {
+              "type": "boolean"
+            },
+            "webinar": {
+              "type": "boolean"
+            },
+            "login": {
+              "type": "boolean"
+            },
+            "payment_gateway_ovo": {
+              "type": "boolean"
+            },
+            "explore": {
+              "type": "boolean"
+            },
+            "payment_gateway_dana": {
+              "type": "boolean"
+            },
+            "integration": {
+              "type": "boolean"
+            },
+            "payment_gateway_bca": {
+              "type": "boolean"
+            },
+            "ai_training": {
+              "type": "boolean"
+            },
+            "certificate": {
+              "type": "boolean"
+            },
+            "payment_gateway_indomaret": {
+              "type": "boolean"
+            },
+            "sync_label": {
+              "type": "boolean"
+            },
+            "payment_gateway_alfamart": {
+              "type": "boolean"
+            },
+            "payment_gateway_bsi": {
+              "type": "boolean"
+            },
+            "bypass_enrollment_rate_limit": {
+              "type": "boolean"
+            },
+            "payment_gateway_gopay": {
+              "type": "boolean"
+            },
+            "quiz": {
+              "type": "boolean"
+            },
+            "community": {
+              "type": "boolean"
+            },
+            "payment_gateway_shopeepay": {
+              "type": "boolean"
+            },
+            "career_partnership": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "coming_soon",
+            "bypass_captcha",
+            "checkout_payment_gateway",
+            "payment_gateway_qris",
+            "career_sales_mgmt",
+            "career_sales",
+            "career_marketing",
+            "disable_rate_limiter",
+            "payment_gateway_cimb",
+            "payment_gateway_bri",
+            "payment_gateway_mandiri",
+            "payment_gateway_bni",
+            "program_data",
+            "webinar",
+            "login",
+            "payment_gateway_ovo",
+            "explore",
+            "payment_gateway_dana",
+            "integration",
+            "payment_gateway_bca",
+            "ai_training",
+            "certificate",
+            "payment_gateway_indomaret",
+            "sync_label",
+            "payment_gateway_alfamart",
+            "payment_gateway_bsi",
+            "bypass_enrollment_rate_limit",
+            "payment_gateway_gopay",
+            "quiz",
+            "community",
+            "payment_gateway_shopeepay",
+            "career_partnership"
+          ]
+        }
+      },
+      "required": [
+        "user",
+        "feature_flags"
+      ]
+    }
+  },
+  "required": [
+    "success",
+    "data"
+  ]
+}
