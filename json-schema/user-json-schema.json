@@ -1,0 +1,859 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "properties": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "type"
+          ]
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "user": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "properties": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "email": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "email_confirmed": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "name": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "roles": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "source": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "can_access": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "required": {
+                                  "type": "array",
+                                  "items": {
+                                    "required": [],
+                                    "properties": {}
+                                  }
+                                },
+                                "properties": {
+                                  "type": "object",
+                                  "properties": {},
+                                  "required": []
+                                }
+                              },
+                              "required": [
+                                "required",
+                                "properties"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "items"
+                          ]
+                        },
+                        "emra_pro_role": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "required": {
+                                  "type": "array",
+                                  "items": {
+                                    "required": [],
+                                    "properties": {}
+                                  }
+                                },
+                                "properties": {
+                                  "type": "object",
+                                  "properties": {},
+                                  "required": []
+                                }
+                              },
+                              "required": [
+                                "required",
+                                "properties"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "items"
+                          ]
+                        },
+                        "active": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "phone_number": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "country_code": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "country": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "whatsapp": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "google_id": {
+                          "type": "object",
+                          "properties": {},
+                          "required": []
+                        },
+                        "google_avatar_url": {
+                          "type": "object",
+                          "properties": {},
+                          "required": []
+                        },
+                        "created_at": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "updated_at": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        },
+                        "last_login_at": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "minLength": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "minLength"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "email",
+                        "email_confirmed",
+                        "name",
+                        "roles",
+                        "source",
+                        "can_access",
+                        "emra_pro_role",
+                        "active",
+                        "phone_number",
+                        "country_code",
+                        "country",
+                        "whatsapp",
+                        "google_id",
+                        "google_avatar_url",
+                        "created_at",
+                        "updated_at",
+                        "last_login_at"
+                      ]
+                    },
+                    "required": {
+                      "type": "array",
+                      "items": {
+                        "required": [],
+                        "properties": {}
+                      }
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "properties",
+                    "required"
+                  ]
+                },
+                "feature_flags": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "properties": {
+                      "type": "object",
+                      "properties": {
+                        "coming_soon": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "bypass_captcha": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "checkout_payment_gateway": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_qris": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "career_sales_mgmt": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "career_sales": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "career_marketing": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "disable_rate_limiter": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_cimb": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_bri": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_mandiri": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_bni": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "program_data": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "webinar": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "login": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_ovo": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "explore": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_dana": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "integration": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_bca": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "ai_training": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "certificate": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_indomaret": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "sync_label": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_alfamart": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_bsi": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "bypass_enrollment_rate_limit": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_gopay": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "quiz": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "community": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "payment_gateway_shopeepay": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        },
+                        "career_partnership": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "type"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "coming_soon",
+                        "bypass_captcha",
+                        "checkout_payment_gateway",
+                        "payment_gateway_qris",
+                        "career_sales_mgmt",
+                        "career_sales",
+                        "career_marketing",
+                        "disable_rate_limiter",
+                        "payment_gateway_cimb",
+                        "payment_gateway_bri",
+                        "payment_gateway_mandiri",
+                        "payment_gateway_bni",
+                        "program_data",
+                        "webinar",
+                        "login",
+                        "payment_gateway_ovo",
+                        "explore",
+                        "payment_gateway_dana",
+                        "integration",
+                        "payment_gateway_bca",
+                        "ai_training",
+                        "certificate",
+                        "payment_gateway_indomaret",
+                        "sync_label",
+                        "payment_gateway_alfamart",
+                        "payment_gateway_bsi",
+                        "bypass_enrollment_rate_limit",
+                        "payment_gateway_gopay",
+                        "quiz",
+                        "community",
+                        "payment_gateway_shopeepay",
+                        "career_partnership"
+                      ]
+                    },
+                    "required": {
+                      "type": "array",
+                      "items": {
+                        "required": [],
+                        "properties": {}
+                      }
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "properties",
+                    "required"
+                  ]
+                }
+              },
+              "required": [
+                "user",
+                "feature_flags"
+              ]
+            },
+            "required": {
+              "type": "array",
+              "items": {
+                "required": [],
+                "properties": {}
+              }
+            }
+          },
+          "required": [
+            "type",
+            "properties",
+            "required"
+          ]
+        }
+      },
+      "required": [
+        "success",
+        "data"
+      ]
+    },
+    "required": {
+      "type": "array",
+      "items": {
+        "required": [],
+        "properties": {}
+      }
+    }
+  },
+  "required": [
+    "$schema",
+    "description",
+    "type",
+    "properties",
+    "required"
+  ]
+}
