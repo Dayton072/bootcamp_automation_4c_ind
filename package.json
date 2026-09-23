@@ -14,7 +14,7 @@
     "json-schema-generator": "^2.0.6"
   },
   "dependencies": {
-    "@ai-sdk/openai-compatible": "^3.0.53",
+    "@ai-sdk/openai-compatible": "^3.0.54",
     "dotenv": "^17.4.2",
     "jsonschema": "^1.5.0"
   }
